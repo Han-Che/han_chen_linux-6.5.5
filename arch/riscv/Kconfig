@@ -862,12 +862,19 @@ config BUILTIN_DTB
 	depends on OF && NONPORTABLE
 	default y if XIP_KERNEL
 
+config RISCV_PAGE_SIZE_2MB
+    bool "Use 2MB page size"
+    depends on ARCH_RISCV
+    default y
+
+
 config PORTABLE
 	bool
 	default !NONPORTABLE
 #	select EFI
 	select MMU
 	select OF
+	select RISCV_PAGE_SIZE_2MB
 
 menu "Power management options"
 

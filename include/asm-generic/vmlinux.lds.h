@@ -765,9 +765,9 @@
 	}
 
 /*
- * DWARF debug sections.
- * Symbols in the DWARF debugging sections are relative to
- * the beginning of the section so we begin them at 0.
+	* DWARF debug sections.
+	* Symbols in the DWARF debugging sections are relative to
+	* the beginning of the section so we begin them at 0.
  */
 #define DWARF_DEBUG							\
 		/* DWARF 1 */						\
